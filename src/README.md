@@ -1,12 +1,24 @@
-# 🌟 Awesome LLM Apps
+# 🌟 Awesome LLM Apps & Tutorials
 
-# 🌟 精选大型语言模型应用
+A curated collection of LLM applications, tutorials, and frameworks built with OpenAI, Anthropic, DeepSeek, and local open-source models.
 
-这是一个精选的优秀大型语言模型（LLM）应用集合，基于RAG和AI代理构建。本仓库汇集了使用OpenAI、Anthropic、Google等模型的LLM应用，甚至包括像LLaMA这样的开源模型，您可以在本地计算机上运行。
+> **Note**: This directory has been reorganized for clarity.
 
-## 🤔 为什么选择精选大型语言模型应用？
+## 📂 Directory Structure (目录结构)
 
-- 💡 探索大型语言模型在不同领域中的实用和创新应用，从代码仓库到电子邮件收件箱等。
-- 🔥 了解结合了OpenAI、Anthropic、Gemini等LLM以及开源替代方案的RAG和AI代理应用。
-- 🎓 学习文档详尽的项目，并为不断增长的基于LLM的开源生态系统贡献力量。
+| Directory | Description | Key Topics |
+| :--- | :--- | :--- |
+| **[`agents/`](./agents)** | **AI Agent Tutorials** | CrewAI, AutoGen, Multi-Agent Systems |
+| **[`chatbots/`](./chatbots)** | **Chatbot Implementations** | Custom Chatbots, Persona-based Bots |
+| **[`frameworks/`](./frameworks)** | **Advanced Frameworks** | Cursor AI, Web Scrapers, Experimental Tools |
+| **[`rag/`](./rag)** | **RAG Systems** | Retrieval-Augmented Generation, Vector DBs |
+| **[`finetuning/`](./finetuning)** | **Fine-tuning Guides** | LoRA, QLoRA, Custom Model Training |
+| **[`memory/`](./memory)** | **LLM Memory** | Long-term Memory, Context Management |
 
+## 🚀 Getting Started
+
+Explore the directories above to find specific tutorials and code examples. Each folder typically contains its own `README.md` or source code with detailed instructions.
+
+## 🤝 Contribution
+
+Feel free to submit Pull Requests to add new cool LLM apps or improve existing tutorials!

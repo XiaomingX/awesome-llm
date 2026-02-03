@@ -7,8 +7,16 @@
 * **[DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)** - 开源界的推理模型里程碑，通过强化学习激发了类似 OpenAI o1 的深度思考能力。
 * **[OpenAI o1/o3](https://openai.com/o1)** - 开启了“系统2”思维时代，通过思维链（CoT）在复杂数学、编程和科学问题上实现了突破性表现。
 * **[Llama 4 / 3.3](https://llama.meta.com/)** - Meta 继续引领开源，最新的 Llama 4 系列在多模态理解和长上下文处理上设立了新标准。
-
+* **[Gemini 3](https://deepmind.google/technologies/gemini/)** - Google 的多模态跃进之作，支持百万级 Token 上下文，具备强大的 UI 生成及前端编码能力。
 * **[Ollama](https://github.com/ollama/ollama)** - 目前最流行的本地 LLM 运行工具，支持一键运行 Llama 3.3, Gemma 2, Mistral 等模型。
+
+## 2026 发展趋势 (Trends)
+
+> 💡 **核心洞察**: 大语言模型正从单一语言处理向**世界模型 (World Models)** 演进，深度融入机器感知、内容生成及因果推理能力。
+
+* **技术演进**: 2026年主流机构（如 DeepSeek, OpenAI, Apple）将密集迭代模型，重点攻克长程推理和 Agentic Workflow。
+* **企业策略**: 建议科技企业关注 Llama/Qwen 等开源方案用于内部研发，同时追踪高性价比 API 以优化运营成本。
+
 
 ## 重要论文里程碑
 
@@ -33,7 +41,7 @@
 | 2024-12 | DeepSeek-V3 | DeepSeek | [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) |
 | 2025-01 | DeepSeek-R1 | DeepSeek | [DeepSeek-R1: Incentivizing Reasoning via Reinforcement Learning](https://github.com/deepseek-ai/DeepSeek-R1) |
 | 2025-05 | Claude 4 | Anthropic | [Claude 4 Opus Technical Report](https://www.anthropic.com/research) |
-| 2025-08 | GPT-5 | OpenAI | [GPT-5 System Card](https://openai.com/gpt-5) |
+| 2025-08 | GPT-5.2 | OpenAI | [GPT-5 System Card](https://openai.com/gpt-5) (专业工作优化，强化工具调用) |
 | 2025-09 | Claude 4.5 | Anthropic | [Claude 4.5 Sonnet Update](https://www.anthropic.com/news) |
 
 ## 其他相关论文
@@ -79,6 +87,7 @@
 
 #### 其他优秀模型
 
+* **[GLM-4-Plus](https://github.com/THUDM/GLM-4)** - 智谱AI 最新力作，结合 PPO 技术大幅提升推理与指令遵循能力，商业化落地首选。
 * **[Phi-4](https://huggingface.co/microsoft)** - Microsoft 推出的“小而美”模型，推理能力惊人。
 * **[Nemotron-4](https://huggingface.co/nvidia)** - NVIDIA 发布的用于生成合成数据的重型模型。
 
@@ -92,17 +101,75 @@
 * **[Unsloth](https://github.com/unslothai/unsloth)** - **强烈推荐**。训练速度提升 2-5 倍，显存占用减少 50%，是目前微调 Llama/Mistral 的首选工具。
 * **[Axolotl](https://www.google.com/search?q=https://github.com/OpenAccess-AI-Collective/axolotl)** - 配置化微调工具，支持绝大多数主流开源模型。
 * **[Llama-Factory](https://github.com/hiyouga/LLaMA-Factory)** - 提供 WebUI 的微调框架，对中文用户非常友好。
+* **[Firefly](https://github.com/yangjianxin1/Firefly)** - 全能型训练框架，支持预训练、SFT、DPO，适配 Qwen/Llama 等主流模型。
 * **[DeepSpeed](https://github.com/microsoft/DeepSpeed)** & **[Megatron-LM](https://github.com/NVIDIA/Megatron-LM)** - 依然是超大规模集群预训练的基石。
+* **[ColossalAI](https://github.com/hpcaitech/ColossalAI)** - 面向大模型时代的统一并行训练系统，支持异构内存管理，显著降低显存开销。
 
-## LLM部署与本地运行
+> 💡 **选型建议**: 对于大规模预训练（千卡级），优先选择 **DeepSpeed** 或 **ColossalAI** 以确保稳定性和效率；对于中小规模微调或快速验证，**Unsloth** 和 **Llama-Factory** 是最高效的选择。
 
-* **[Ollama](https://github.com/ollama/ollama)** - **新手首选**。一个命令即可在 Mac/Linux/Windows 上运行 Llama 3, DeepSeek 等模型。
-* **[vLLM](https://github.com/vllm-project/vllm)** - 生产环境的首选推理引擎，支持 PagedAttention，吞吐量极高。
-* **[LM Studio](https://lmstudio.ai/)** - 带有图形界面的本地模型运行工具，支持 GGUF 格式。
-* **[SGLang](https://github.com/sgl-project/sglang)** - 针对复杂 Prompt 流程优化的推理框架，速度比 vLLM 更快。
-* **[TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)** - NVIDIA 官方推出的极致优化推理库。
-* **[Open WebUI](https://github.com/open-webui/open-webui)** - **强烈推荐**。功能最强大的本地 LLM Web 界面，完美支持 Ollama 和 OpenAI API。
-* **[LiteLLM](https://github.com/BerriAI/litellm)** - 用 OpenAI 格式调用 100+ 种 LLM API (Anthropic, Vertex, Ollama 等)。
+## LLM 加速与内核 (Acceleration & Kernels)
+
+* **[FlashInfer](https://github.com/flashinfer-ai/flashinfer)** - 加速 FlashAttention，支持 2-5x 速度提升，LLM Serving 必备内核库。
+* **[DeepGEMM](https://github.com/deepseek-ai/DeepGEMM)** - DeepSeek 开源的高效 FP8 GEMM 内核，适用于极致性能优化。
+* **[DeepEP](https://github.com/deepseek-ai/DeepEP)** - 专家并行通信库，大幅提升 MoE 模型分布式训练效率。
+
+## 多模态预训练 (Multimodal Pre-training)
+
+### 语音 (Audio)
+* **[SpeechBrain](https://github.com/speechbrain/speechbrain)** - PyTorch 语音工具包，支持 wav2vec 2.0/Whisper 等大规模自监督预训练。
+* **[S3PRL](https://github.com/s3prl/s3prl)** - 专注于自监督学习 (SSL) 的预训练框架，支持 HuBERT/TERA 等 Upstream 模型。
+
+### 视频 (Video)
+* **[VideoMAE](https://github.com/MCG-NJU/VideoMAE)** - (V1/V2) 视频版 MAE，通过高掩码率自监督学习高效视频表示 (Kinetics-400 SOTA)。
+* **[VPT (Video Pre-Training)](https://github.com/openai/Video-Pre-Training)** - OpenAI 用行为克隆从 Minecraft 视频大规模预训练代理模型。
+* **[EVL](https://github.com/OpenGVLab/efficient-video-recognition)** - 冻结 CLIP 骨干的高效视频学习器，极低训练成本实现高精度识别。
+
+## LLM 预训练方法 (Pre-training Methods)
+
+* **[MiniMind](https://github.com/jingyaogong/minimind)** - 从零构建小参数 LLM (26M起) 的全流程教程，适合低成本实验。
+* **[SO-Large-LM](https://github.com/datawhalechina/so-large-lm)** - 系统化的预训练开源教程，覆盖数据清洗、分词到 MoE 架构设计。
+* **[Happy-LLM](https://github.com/datawhalechina/happy-llm)** - 专注 Transformer 原理实现的预训练实践项目。
+
+## 多模态嵌入 (Multimodal Embeddings)
+
+* **[ImageBind](https://github.com/facebookresearch/ImageBind)** - Meta 开源的六模态统一嵌入空间 (图像/文本/音频/深度/热/IMU)。
+* **[CLIP](https://github.com/openai/CLIP)** & **[timm](https://github.com/huggingface/pytorch-image-models)** - 图像文本对齐的基石模型与最大的视觉骨干库。
+* **[E5-V](https://github.com/kongds/E5-V)** - 桥接 Llama3 与视觉模型的通用多模态嵌入。
+
+## 强化学习与机器人 (RL & Robotics)
+
+### 强化学习 (Reinforcement Learning)
+* **[Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)** - 基于 PyTorch 的标准 RL 算法实现 (PPO, TD3, SAC)，稳定可靠。
+* **[RLlib (Ray)](https://github.com/ray-project/ray)** - 工业级分布式 RL 训练框架，支持大规模多智能体环境。
+* **[CleanRL](https://github.com/vwxyzjn/cleanrl)** - 单文件实现的 RL 算法库 (PPO/DQN)，代码极其简洁，适合入门与魔改。
+* **[Easy-RL](https://github.com/datawhalechina/easy-rl)** - 经典的强化学习中文教程（蘑菇书），配套完善的代码实践。
+
+### 具身智能 (Robotics/Embodied AI)
+* **[MuJoCo](https://github.com/google-deepmind/mujoco)** - DeepMind 开源的高精度物理引擎，RL 机器人研究的标准环境。
+* **[OpenManipulator](https://github.com/ROBOTIS-GIT/open_manipulator)** - 基于 ROS 的开源机械臂平台，支持完整的仿真到实物迁移。
+* **[RoboNet](https://github.com/google/roboc_suite)** - 大规模机器人交互数据集，用于泛化策略学习。
+
+
+## LLM 部署与推理 (Deployment & Inference)
+
+### 推理引擎 (Inference Engines)
+* **[vLLM](https://github.com/vllm-project/vllm)** - 生产环境首选。支持 PagedAttention 和连续批处理，吞吐量 SOTA。
+* **[llama.cpp](https://github.com/ggerganov/llama.cpp)** - 边缘计算神器。纯 C++ 实现，针对 Apple Silicon 和 CPU 极致优化。
+* **[TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)** - NVIDIA 官方加速库，支持 In-flight batching 和 FP8 量化。
+* **[LMDeploy](https://github.com/InternLM/lmdeploy)** - InternLM 团队推出的高性能推理工具，TurboMind 引擎速度极快。
+* **[LightLLM](https://github.com/ModelTC/lightllm)** - 纯 Python/Triton 实现的轻量级推理框架，易于修改和扩展。
+
+### 推理网关 (Inference Gateways)
+* **[Inference Gateway](https://github.com/inference-gateway/inference-gateway)** - 企业级 AI 网关，统一管理 OpenAI/Ollama/Anthropic 等接口，支持 MCP 协议。
+* **[LiteLLM](https://github.com/BerriAI/litellm)** - **最流行代理**。用统一的 OpenAI 格式调用 100+ 种 LLM API，支持负载均衡和成本追踪。
+* **[llm-d](https://github.com/llm-d/llm-d)** - Kubernetes 原生的分布式推理栈，集成了 vLLM 和网关。
+* **[Open WebUI](https://github.com/open-webui/open-webui)** - 功能最强大的本地 Web 界面，自带 RAG 和多模型管理。
+* **[BentoML](https://github.com/bentoml/BentoML)** - 将模型打包为生产级微服务的统一框架。
+
+## 模型仓库与数据管理 (Model Registries)
+
+* **[KohakuHub](https://github.com/KohakuBlueleaf/KohakuHub)** - 自托管的 Hugging Face 替代方案，支持 Git-like 版本控制，适合企业内部私有部署。
+* **[DagsHub](https://dagshub.com)** - 结合 GitHub + DVC 的开源 ML 平台，提供实验跟踪和数据版本管理。
 
 ## LLM 编程助手 (AI Coding Assistants)
 
