@@ -7,7 +7,7 @@
 * **[DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)** - 开源界的推理模型里程碑，通过强化学习激发了类似 OpenAI o1 的深度思考能力。
 * **[OpenAI o1/o3](https://openai.com/o1)** - 开启了“系统2”思维时代，通过思维链（CoT）在复杂数学、编程和科学问题上实现了突破性表现。
 * **[Llama 4 / 3.3](https://llama.meta.com/)** - Meta 继续引领开源，最新的 Llama 4 系列在多模态理解和长上下文处理上设立了新标准。
-* **[Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)** - 依然热门的实时换脸工具，仅需单张图片即可实现视频深度伪造。
+
 * **[Ollama](https://github.com/ollama/ollama)** - 目前最流行的本地 LLM 运行工具，支持一键运行 Llama 3.3, Gemma 2, Mistral 等模型。
 
 ## 重要论文里程碑
@@ -38,7 +38,7 @@
 
 ## 其他相关论文
 
-(此处保留原有的经典分类，建议增加以下新方向)
+
 
 * **[LLM推理与思维链 (Reasoning & CoT)](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers)** - 关注 OpenAI o1 和 DeepSeek-R1 引发的推理能力研究。
 * **[高效微调与量化](https://github.com/unslothai/unsloth)** - Unsloth, QLoRA 等让个人显卡也能微调大模型的技术。
@@ -101,6 +101,15 @@
 * **[LM Studio](https://lmstudio.ai/)** - 带有图形界面的本地模型运行工具，支持 GGUF 格式。
 * **[SGLang](https://github.com/sgl-project/sglang)** - 针对复杂 Prompt 流程优化的推理框架，速度比 vLLM 更快。
 * **[TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)** - NVIDIA 官方推出的极致优化推理库。
+* **[Open WebUI](https://github.com/open-webui/open-webui)** - **强烈推荐**。功能最强大的本地 LLM Web 界面，完美支持 Ollama 和 OpenAI API。
+* **[LiteLLM](https://github.com/BerriAI/litellm)** - 用 OpenAI 格式调用 100+ 种 LLM API (Anthropic, Vertex, Ollama 等)。
+
+## LLM 编程助手 (AI Coding Assistants)
+
+* **[Cursor](https://www.cursor.com/)** - **当前体验最佳**。基于 VS Code 修改的 AI 原生编辑器，Tab 补全和 Composer 功能极大地改变了编程体验。
+* **[Windsurf](https://codeium.com/windsurf)** - Codeium 推出的 Agentic IDE，主打深度上下文感知和主动行动能力。
+* **[Cline](https://github.com/cline/cline)** - 开源的自主编程 Agent 插件，能够执行终端命令、文件读写，配合 Claude 3.5 Sonnet 效果拔群。
+* **[Continue](https://github.com/continuedev/continue)** - 开源的 IDE 插件 (VS Code / JetBrains)，支持连接本地 Ollama 模型进行辅助编程。
 
 ## LLM应用与智能体 (Agent)
 
@@ -108,6 +117,10 @@
 * **[Dify](https://github.com/langgenius/dify)** - 开源的 LLM 应用开发平台，可视化编排 RAG 和 Agent。
 * **[MemGPT](https://github.com/cpacker/MemGPT)** - 赋予 LLM 长期记忆和操作系统级别的上下文管理能力。
 * **[CrewAI](https://github.com/joaomdmoura/crewAI)** - 编排角色扮演的 AI 智能体团队来共同完成任务。
+## 提示工程与优化 (Prompt Engineering)
+
+* **[DSPy](https://github.com/stanfordnlp/dspy)** - 斯坦福推出的框架，主张“编程”而非“提示”语言模型，通过编译自动优化 Prompt。
+* **[Promptfoo](https://github.com/promptfoo/promptfoo)** - 开发者友好的 LLM 测试工具，用于评估 Prompt 质量和模型输出，防止回归。
 
 ## LLM教程与课程 (2025版)
 
