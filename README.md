@@ -160,6 +160,7 @@
 * **[LightLLM](https://github.com/ModelTC/lightllm)** - 纯 Python/Triton 实现的轻量级推理框架，易于修改和扩展。
 
 ### 推理网关 (Inference Gateways)
+* **[Bifrost](https://github.com/maximhq/bifrost)** - 开源自托管 AI 网关，兼容 OpenAI API，支持多提供商路由、负载均衡、虚拟密钥和请求日志。
 * **[Inference Gateway](https://github.com/inference-gateway/inference-gateway)** - 企业级 AI 网关，统一管理 OpenAI/Ollama/Anthropic 等接口，支持 MCP 协议。
 * **[LiteLLM](https://github.com/BerriAI/litellm)** - **最流行代理**。用统一的 OpenAI 格式调用 100+ 种 LLM API，支持负载均衡和成本追踪。
 * **[llm-d](https://github.com/llm-d/llm-d)** - Kubernetes 原生的分布式推理栈，集成了 vLLM 和网关。
