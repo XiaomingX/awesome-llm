@@ -194,3 +194,7 @@
 * **[Andrej Karpathy's LLM101n](https://github.com/karpathy/LLM101n)** - Karpathy 大神的最新课程，教你从零构建一个 Storyteller AI。
 * **[Generative AI with LLMs (Coursera)](https://www.coursera.org/learn/generative-ai-with-llms)** - AWS 和 DeepLearning.AI 联合推出的实战课程。
 * **[DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/)** - 包含 RAG、Agent、Fine-tuning 等大量免费短课程。
+## Hosted Flat-Rate AI Gateways
+
+* **[APIClaw](https://apiclaw.biz/)** - OpenAI-compatible hosted gateway with one flat monthly rate across Claude, GPT, Kimi, Qwen, DeepSeek, and GLM. Includes 50 free trial requests; plans from $19/month.
+* 
