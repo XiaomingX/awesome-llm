@@ -180,6 +180,7 @@
 
 ## LLM应用与智能体 (Agent)
 
+* **[agent-qa](https://vostride.com)** - 面向网页、Android 和 iOS 的 AI 测试智能体，通过 CLI/MCP 执行测试，结合 memidex 持久记忆与证据门控的自我改进；采用 FSL-1.1-ALv2，模型及基础设施费用另计。
 * **[LangGraph](https://github.com/langchain-ai/langgraph)** - LangChain 的升级版，专注于构建有状态、循环的智能体工作流。
 * **[Dify](https://github.com/langgenius/dify)** - 开源的 LLM 应用开发平台，可视化编排 RAG 和 Agent。
 * **[MemGPT](https://github.com/cpacker/MemGPT)** - 赋予 LLM 长期记忆和操作系统级别的上下文管理能力。
